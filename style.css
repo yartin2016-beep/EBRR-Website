@@ -1,0 +1,692 @@
+
+/* =================================
+   EBRR WEBSITE - MAIN STYLESHEET
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 120px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #35465b;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+.header {
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+}
+
+.top-bar {
+    background: #0b2038;
+    color: #dce5ee;
+    font-size: 11px;
+    padding: 7px 0;
+}
+
+.top-bar-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.nav-container {
+    min-height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #102d50;
+}
+
+.logo {
+    background: #102d50;
+    color: #e4bd72;
+    width: 58px;
+    height: 58px;
+    display: grid;
+    place-items: center;
+    font-size: 19px;
+    font-weight: bold;
+    border: 2px solid #c89d4c;
+    border-radius: 50%;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+}
+
+.brand-text strong {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.brand-text span {
+    font-size: 11px;
+    color: #68788b;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.navigation a {
+    color: #35465b;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navigation a:hover {
+    color: #c4953d;
+}
+
+.navigation .contact-link {
+    background: #102d50;
+    color: white;
+    padding: 11px 16px;
+    border-radius: 4px;
+}
+
+.navigation .contact-link:hover {
+    background: #c4953d;
+    color: #ffffff;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #102d50;
+}
+
+/* HERO SECTION */
+
+.hero {
+    background: linear-gradient(120deg, #0b2038 0%, #173d62 100%);
+    color: #ffffff;
+    padding: 95px 0;
+    overflow: hidden;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-label {
+    color: #e4bd72;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 22px 0;
+    max-width: 650px;
+}
+
+.hero-text h1 span {
+    color: #e4bd72;
+}
+
+.hero-text p {
+    color: #d3deea;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 22px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #d2a653;
+    color: #102d50;
+}
+
+.btn-primary:hover {
+    background: #e4bd72;
+}
+
+.btn-outline {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.btn-outline:hover {
+    background: #ffffff;
+    color: #102d50;
+}
+
+.hero-card {
+    border: 1px solid rgba(228,189,114,0.6);
+    background: rgba(255,255,255,0.06);
+    padding: 38px 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.hero-card-small {
+    color: #e4bd72;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.hero-card h2 {
+    font-size: 25px;
+    margin-top: 18px;
+}
+
+.gold-line {
+    width: 55px;
+    height: 3px;
+    background: #d2a653;
+    margin: 25px auto;
+}
+
+.hero-card p {
+    color: #d3deea;
+    font-size: 13px;
+}
+
+/* GENERAL SECTION HEADINGS */
+
+.section-padding {
+    padding: 85px 0;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.section-label {
+    color: #b78a3e;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    color: #102d50;
+    font-size: 36px;
+    margin: 12px 0;
+}
+
+.heading-line {
+    width: 55px;
+    height: 3px;
+    background: #c89d4c;
+    margin: 18px auto;
+}
+
+.section-heading p {
+    color: #66758a;
+    line-height: 1.7;
+}
+
+/* ABOUT SECTION */
+
+.about {
+    background: #f7f9fc;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 45px;
+    align-items: center;
+}
+
+.about-text h3 {
+    color: #102d50;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: #59697c;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+.about-highlight {
+    background: #102d50;
+    color: white;
+    padding: 38px 25px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.about-symbol {
+    width: 75px;
+    height: 75px;
+    border: 2px solid #d2a653;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 25px;
+    color: #e4bd72;
+    font-weight: bold;
+}
+
+.about-highlight h3 {
+    font-size: 20px;
+    margin: 12px 0;
+}
+
+.about-highlight p {
+    color: #d3deea;
+    font-size: 13px;
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 55px;
+}
+
+.mission-card {
+    background: #ffffff;
+    padding: 30px 25px;
+    border: 1px solid #e6ebf1;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.mission-card:hover,
+.school-card:hover,
+.examination-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(16,45,80,0.08);
+}
+
+.mission-icon {
+    color: #c4953d;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.mission-card h3 {
+    color: #102d50;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.mission-card p {
+    color: #66758a;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* SCHOOLS SECTION */
+
+.schools {
+    background: #ffffff;
+}
+
+.schools-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.school-card {
+    background: #f7f9fc;
+    border: 1px solid #e6ebf1;
+    border-radius: 6px;
+    padding: 30px 25px;
+    transition: 0.3s;
+}
+
+.school-number {
+    color: #c4953d;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.school-card h3 {
+    color: #102d50;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.school-card p {
+    color: #66758a;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.schools-note {
+    background: #102d50;
+    color: #ffffff;
+    text-align: center;
+    padding: 22px;
+    margin-top: 35px;
+    border-left: 4px solid #d2a653;
+    border-radius: 4px;
+}
+
+.schools-note p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* EXAMINATIONS SECTION */
+
+.examinations {
+    background: #f7f9fc;
+}
+
+.examinations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.examination-card {
+    background: #ffffff;
+    padding: 32px 25px;
+    border: 1px solid #e6ebf1;
+    border-top: 4px solid #c89d4c;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.exam-grade {
+    display: inline-block;
+    color: #b78a3e;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+}
+
+.examination-card h3 {
+    color: #102d50;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.examination-card p {
+    color: #66758a;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* RESULTS SECTION */
+
+.results {
+    background: #ffffff;
+}
+
+.info-panel {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    text-align: center;
+    background: #f7f9fc;
+    border: 1px solid #e6ebf1;
+    border-radius: 7px;
+}
+
+.info-panel h3 {
+    color: #102d50;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.info-panel p {
+    color: #66758a;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.status {
+    display: inline-block;
+    background: #fff3d9;
+    color: #8a6426;
+    padding: 9px 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* NEWS SECTION */
+
+.news {
+    background: #f7f9fc;
+}
+
+/* CONTACT SECTION */
+
+.contact-section {
+    background: #102d50;
+    color: #ffffff;
+    text-align: center;
+}
+
+.contact-content h2 {
+    font-size: 36px;
+    margin: 12px 0;
+}
+
+.contact-content p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    color: #d3deea;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.contact-content .btn {
+    margin-bottom: 18px;
+}
+
+.contact-content .contact-email {
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* FOOTER */
+
+.footer {
+    background: #081829;
+    color: #d3deea;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer h3 {
+    color: #e4bd72;
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.footer p {
+    font-size: 13px;
+    margin: 6px 0;
+}
+
+.footer-motto {
+    color: #e4bd72;
+}
+
+.footer-line {
+    width: 65px;
+    height: 2px;
+    background: #c89d4c;
+    margin: 22px auto;
+}
+
+.copyright {
+    color: #9aa9ba;
+    font-size: 11px !important;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 950px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navigation {
+        display: none;
+        position: absolute;
+        top: 122px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 20px 5%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 17px;
+        box-shadow: 0 8px 15px rgba(0,0,0,0.08);
+    }
+
+    .navigation.active {
+        display: flex;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero-text h1 {
+        font-size: 38px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-grid,
+    .schools-grid,
+    .examinations-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .top-bar {
+        font-size: 9px;
+    }
+
+    .nav-container {
+        min-height: 78px;
+    }
+
+    .brand-text strong {
+        font-size: 12px;
+    }
+
+    .brand-text span {
+        font-size: 9px;
+    }
+
+    .logo {
+        width: 48px;
+        height: 48px;
+        font-size: 16px;
+    }
+
+    .navigation {
+        top: 110px;
+    }
+
+    .hero {
+        padding: 65px 0;
+    }
+
+    .hero-text h1 {
+        font-size: 31px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+    .section-padding {
+        padding: 65px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .contact-content h2 {
+        font-size: 30px;
+    }
+}
